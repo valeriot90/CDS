@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>GestioneAule</display-name>
+  <servlet>
+		<display-name>LoginServlet</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>GpServlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>RegisterServlet</display-name>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>GpServlet.RegisterServlet</servlet-class>
+	</servlet>
+        <servlet>
+		<display-name>RoomServlet</display-name>
+		<servlet-name>RoomServlet</servlet-name>
+		<servlet-class>GpServlet.RoomServlet</servlet-class>
+	</servlet>
+        <servlet>
+		<display-name>UpdateServlet</display-name>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>GpServlet.UpdateServlet</servlet-class>
+	</servlet>
+        
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+        <servlet-mapping>
+		<servlet-name>RoomServlet</servlet-name>
+		<url-pattern>/RoomServlet</url-pattern>
+	</servlet-mapping>
+        <servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/UpdateServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
