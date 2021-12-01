@@ -1,6 +1,6 @@
 ##############################################################
 # CDS                                                        #
-# Project for course of Concurrent and Distributed Systems   #
+# Project for Concurrent and Distributed Systems course      #
 #                                                            #
 # Academic code for academic purposes only.                  #
 ##############################################################
